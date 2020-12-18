@@ -5,16 +5,16 @@
 	<script type="text/javascript">
 		var hello=document.getElementById("")
 		function mon(element){
-			element.style.opacity='1';
+			element.style.opacity='0.9';
 		}
 		function mout(element){
-			element.style.opacity='0.8';
+			element.style.opacity='0.6';
 		}
 		function mmon(element){
 			element.style.opacity='1';
 		}
 		function mmout(element){
-			element.style.opacity='0.5';
+			element.style.opacity='0.8';
 		}
 		function anima(){
 			var boomm=document.getElementById("boomm");
@@ -41,9 +41,9 @@
 			.object{
 					height: 20%;
 					width: 24%;
-					background-color: #e4d398;
+					background-color:#FFFFFF;
 					float: left;
-					opacity:0.8;
+					opacity:0.6;
 					display: flex;
 					justify-content: center;
 					align-items: center;
@@ -130,7 +130,7 @@
 				justify-content: center;
 				align-items: center;
 			}
-			.bm{background-color: aliceblue;width: 90%;height: 100%;opacity: 0.5;}
+			.bm{background-color: aliceblue;width: 90%;height: 100%;opacity: 0.6;}
 			.wbooom{
 				height: 2%;
 				width: 100%;
@@ -153,13 +153,13 @@
 			.content{width:100%;}
 			.object{	
 					width: 100%;
-					background-color:#e4d398;
+					background-color:#FFFFFF;
 					float: left;
 					opacity:0.8;
 					display: flex;
 					justify-content: center;
 					align-items: center;
-					border-radius: 50px;
+					border-radius: 15px;
 					box-shadow: 0px 0px 5px #000000;
 				}
 			.wobject{
@@ -209,7 +209,7 @@
 				align-items: center;
 			}
 			.headdd{ height: 100%;}
-			.headdder{height: 8%;left:0%;position: absolute;top:0%;}	
+			.headdder{height: 8%;left:0%;position: absolute;top:0%;opacity: 0.8;}	
 			.headerstyle{height: 8%;width:100%;position: absolute;left:0%;top:0%;}
 			.boom{
 			position: absolute;
@@ -230,7 +230,7 @@
 				align-items: center;
 				float:left;
 			}
-			.bm{background-color: aliceblue;width: 100%;height: 90%;opacity: 0.5;}
+			.bm{background-color: aliceblue;width: 100%;height: 90%;opacity: 0.6;}
 			.wbooom{height: 30%;width: 4%;float:left;}
 			.imgg{
 			width: 75%;
@@ -361,19 +361,19 @@
 			<div class="wobject"></div>
 			<a href="子目錄1/chinese.html">
 				<div class="object"onMouseOver="mon(this);"onMouseOut="mout(this);">
-				<img src="ch.png" class="loo"></div></a>
+				<img src="chinese.png" class="loo"></div></a>
 			<div class="wobject"></div>
-			<a href="子目錄1/Untitled-1.html"><div class="object"onMouseOver="mon(this);" onMouseOut="mout(this);"><img src="en2.png" class="loo"></div></a>
+			<a href="子目錄1/Untitled-1.html"><div class="object"onMouseOver="mon(this);" onMouseOut="mout(this);"><img src="english.png" class="loo"></div></a>
 			<div class="wobject"></div>
-			<a href="子目錄1/Untitled-1.html"><div class="object"onMouseOver="mon(this);" onMouseOut="mout(this);"><img src="ma.png" class="loo"></div></a>
+			<a href="子目錄1/Untitled-1.html"><div class="object"onMouseOver="mon(this);" onMouseOut="mout(this);"><img src="math.png" class="loo"></div></a>
 
 			<div class="wwobject"></div>
 			<div class="wobject"></div>
-			<a href="子目錄1/Untitled-1.html"><div class="object"onMouseOver="mon(this);" onMouseOut="mout(this);"><img src="sc.png" class="loo"></div></a>
+			<a href="子目錄1/Untitled-1.html"><div class="object"onMouseOver="mon(this);" onMouseOut="mout(this);"><img src="nature.png" class="loo"></div></a>
 			<div class="wobject"></div>
-			<a href="子目錄1/Untitled-1.html"><div class="object"onMouseOver="mon(this);" onMouseOut="mout(this);"><img src="sh.png" class="loo"></div></a>
+			<a href="子目錄1/Untitled-1.html"><div class="object"onMouseOver="mon(this);" onMouseOut="mout(this);"><img src="social.png" class="loo"></div></a>
 			<div class="wobject"></div>
-			<a href="子目錄1/Untitled-1.html"><div class="object"onMouseOver="mon(this);" onMouseOut="mout(this);"><img src="te.png" class="loo"></div></a>
+			<a href="子目錄1/Untitled-1.html"><div class="object"onMouseOver="mon(this);" onMouseOut="mout(this);"><img src="info.png" class="loo"></div></a>
 		</div>
 		
 		
@@ -381,20 +381,20 @@
 	<div class="boom" id="boomm">
 		<div class="bbmm"> </div>
 		<div class="wbooom"></div>
-		<div class="booom"><div class="bm"onMouseOver="mmon(this);" onMouseOut="mmout(this);"></div></div>
+		<div class="booom"><div class="bm"onMouseOver="mon(this);" onMouseOut="mout(this);"></div></div>
 		<div class="wbooom"></div>
-		<div class="booom"><div class="bm"onMouseOver="mmon(this);" onMouseOut="mmout(this);"></div></div>
+		<div class="booom"><div class="bm"onMouseOver="mon(this);" onMouseOut="mout(this);"></div></div>
 		<div class="wbooom"></div>
-		<div class="booom"><div class="bm"onMouseOver="mmon(this);" onMouseOut="mmout(this);"></div></div>
+		<div class="booom"><div class="bm"onMouseOver="mon(this);" onMouseOut="mout(this);"></div></div>
 		<div class="wbooom"></div>
-		<div class="booom"><div class="bm"onMouseOver="mmon(this);" onMouseOut="mmout(this);"></div></div>
+		<div class="booom"><div class="bm"onMouseOver="mon(this);" onMouseOut="mout(this);"></div></div>
 	</div>
 	<div class="headerstyle">
 	<div  class="head" >
 		<div class="headd"><img src="logo.png" class="headdd"></div>
 	</div>
 	</div>
-	<img src="111.png"class="headdder"onMouseOver="mon(this);"onMouseOut="mout(this);"
+	<img src="111.png"class="headdder"onMouseOver="mmon(this);"onMouseOut="mmout(this);"
 		 onClick="anima();">
 	<div class="animation1"><a href="https://science-event.nctu.edu.tw" class="imggg" ><img src="uapx.jpg" class="imgg" onMouseOver="mon(this);" onMouseOut="mout(this);"></a></div>
 	<div class="animation2"><a href="https://apcs.csie.ntnu.edu.tw" class="imggg"><img src="uapcs.jpg" class="imgg"onMouseOver="mon(this);" onMouseOut="mout(this);"></a></div>
