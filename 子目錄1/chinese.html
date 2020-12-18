@@ -51,53 +51,60 @@
 		text-align: center;
 	}
 	
+	
 	@media screen and (min-width:700px){
 		.box{
 			width: 100%;
 			height: 15%;
 		}
-		.head{background-color: #E5D29A;height: 100%;border-radius: 50px;
-					box-shadow: 0px 0px 5px #000000;}
-		.headd{
-	  		height: 100%;
+		.logo{
 			display: flex;
 			justify-content: center;
 			align-items: center;
-		}
-		.headdd{
 			height: 100%;
-			
 		}
-		.headdder{
-			height: 15%;left:0%;position: absolute;top: 0%;opacity:0.8;
-		}
-		.headerstyle{height: 15%;width:100%;position: absolute;top:0px;left: 0px;}
-		.bodystyle{height: 100%;width:100%;box-sizing: border-box;
+		.head{background-color:#FFFFFF;height: 100%;border-radius: 0px;
+					box-shadow: 0px 5px 10px #000000;}
+			.headd{
+				height: 100%;
+				
+			}
+			.headdd{
+				height: 100%;
+				
+			}
+			.headdder{
+				height: 15%;left:0%;position: absolute;top: 0%;opacity:0.8;
+			}
+			.bodystyle{height: 100%;width:100%;box-sizing: border-box;width:100%;
 				background-size: cover;
 				background-attachment:fixed;
-				background-image: url("cloud.jpg");}
-		.item{
-		flex: auto;
-		height: 800px;
-		width: 45%;
-		margin: 10px;
-		background-color: #FFC5A7;
-		opacity: 0.8;
-		border-radius: 50px;
-		box-shadow: 0px 0px 3px #000000;
-	}
-		.boom{
+				background-image: url(woodbg.jpg);}
+			.headerstyle{height: 15%;width:100%;position: absolute;top:0px;left: 0px;}
+			.background{height: 100%;width: 100%;}
+			.boom1{
+				width: 100%;
+				height: 90%;
+				background-color:#000000;
+			}
+			.boom2{
+				width: 100%;
+				height: 10%;
+			}
+			.boom22{
+				width: 100%;
+				height: 100%;
+			}
+			.boom{
 			position: absolute;
 			left: 0%;
 			top:0%;
 			height: 100%;
 			width: 20%;
 			opacity:0;
-			background-color:#e4d398;
+			
 			transition:opacity 0.5s;
-			box-shadow: 0px 0px 5px #000000;
-			
-			
+			box-shadow: 0px 0px 0px #000000;
 		}
 			.bbmm{
 			height: 20%;
@@ -111,28 +118,85 @@
 				justify-content: center;
 				align-items: center;
 			}
-			.bm{background-color: aliceblue;width: 90%;height: 100%;opacity: 0.5;}
+			.bm{background-color: aliceblue;width: 90%;height: 100%;opacity: 0.6;}
 			.wbooom{
 				height: 2%;
 				width: 100%;
 			}
+				html,body{margin:0;padding:0}
+		.item{
+		flex: auto;
+		height: 800px;
+		width: 45%;
+		margin: 10px;
+		background-color: #FFC5A7;
+		opacity: 0.8;
+		border-radius: 50px;
+		box-shadow: 0px 0px 3px #000000;
+	}
+		.whitebox{
+			height: 0%;width: 0%;
+		}
+		
 	}
 	@media screen and (max-width:700px){			
 		html,body{margin:0;padding:0}
 	.head{background-color: #E5D29A; height: 100%;border-radius: 10px;box-shadow: 0px 0px 5px #000000;}
+					.head{background-color:#FFFFFF; height: 100%;border-radius: 10px;
+					box-shadow: 0px 0px 5px #000000;}
 			.headd{
 				height: 100%;
+				
+			}
+		.logo{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+		}
+			.headdd{ height: 100%;}
+			.headdder{height: 8%;left:0%;position: absolute;top:0%;opacity: 0.8;}	
+			.headerstyle{height: 8%;width:100%;position: absolute;left:0%;top:0%;}
+			.boom1{
+				width: 100%;
+				height:100%;
+			}
+			.boom2{
+				width: 0%;
+				height: 0%;
+			}
+			.boom22{
+				width: 0%;
+				height: 0%;
+			}
+			.boom{
+			position: absolute;
+			left: 0%;
+			top:0%;
+			height: 20%;
+			width: 100%;
+			opacity:0;
+			background-color:#000000;
+			transition:opacity 0.3s;
+			}
+			.bbmm{height: 50%;width: 100%;}
+			.booom{
+				height: 40%;
+				width: 20%;
 				display: flex;
 				justify-content: center;
 				align-items: center;
+				float:left;
 			}
-			.headdd{width:50%;}
-			.headdder{height: 8%;left:0%;position: absolute;top:0%;}
-			.headerstyle{height: 15%;width:100%;}
-		.bodystyle{width:100%;box-sizing: border-box;
+			.bm{background-color: aliceblue;width: 100%;height: 90%;opacity: 0.6;}
+			.wbooom{height: 30%;width: 4%;float:left;}
+			.bodystyle{
+				width:100%;
+				height: 100%;
 				background-size: cover;
 				background-attachment:fixed;
-				background-image: url("cloud.jpg");}
+				background-image: url(woodbg.jpg);
+			}
 		.item{
 		flex: auto;
 		height: 800px;
@@ -141,28 +205,9 @@
 		background-color:#FFC5A7;
 		opacity: 0.8;
 	}
-		.boom{
-			position: absolute;
-			left: 0%;
-			top:0%;
-			height: 15%;
-			width: 100%;
-			opacity:0;
-			background-color:#e4d398;
-			transition:opacity 0.3s;
-			}
-			.bbmm{height: 50%;width: 100%;}
-			.booom{
-				height: 45%;
-				width: 20%;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				float:left;
-				
-			}
-			.bm{background-color: aliceblue;width: 100%;height: 90%;opacity: 0.5;}
-			.wbooom{height: 30%;width: 4%;float:left;}
+		.whitebox{
+			height: 8%;width: 100%;
+		}
 	}
 	}
 </style>
@@ -171,12 +216,10 @@
 </head>
 
 <body class="bodystyle">
-	<div class="headerstyle">
-	<div class="head" >
-		<div class="headd"><img src="ggggg.png" class="headdd"></div>
-	</div>
-	</div>
+	
 	<div class="box"></div>
+	<div class="whitebox"></div>
+	<img style="width: 100%;" src="chineselogo.png">
 	<main> 
 		<div class="item"><a href="https://www.shs.edu.tw" class="a"><img src="chinese1.jpg" class="img" onMouseOver="mon(this);" onMouseOut="mout(this);"></a>
 			<h1 class="h1">
@@ -220,20 +263,27 @@
 		<div class="item"></div>
 	</main>
 	<div class="boom" id="boomm">
+		<div class="boom1">
 		<div class="bbmm"> </div>
 		<div class="wbooom"></div>
-		<div class="booom"><div class="bm"onMouseOver="mmon(this);" onMouseOut="mmout(this);"></div></div>
+		<div class="booom"><div class="bm"onMouseOver="mon(this);" onMouseOut="mout(this);"></div></div>
 		<div class="wbooom"></div>
-		<div class="booom"><div class="bm"onMouseOver="mmon(this);" onMouseOut="mmout(this);"></div></div>
+		<div class="booom"><div class="bm"onMouseOver="mon(this);" onMouseOut="mout(this);"></div></div>
 		<div class="wbooom"></div>
-		<div class="booom"><div class="bm"onMouseOver="mmon(this);" onMouseOut="mmout(this);"></div></div>
+		<div class="booom"><div class="bm"onMouseOver="mon(this);" onMouseOut="mout(this);"></div></div>
 		<div class="wbooom"></div>
-		<div class="booom"><div class="bm"onMouseOver="mmon(this);" onMouseOut="mmout(this);"></div></div>
+		<div class="booom"><div class="bm"onMouseOver="mon(this);" onMouseOut="mout(this);"></div></div>
+		</div>
+		<div class="boom2"><img class="boom22"src="tri.png"></div>
 	</div>
 		
 	
-	
-	<img src="llllll.png" class="headdder"onMouseOver="mon(this);"onMouseOut="mout(this);"
+	<div class="headerstyle">
+	<div class="head" >
+		<div class="headd"><a class="logo"href="../Untitled-1.html"><img src="logo.png" class="headdd"></a></div>
+	</div>
+	</div>
+	<img src="111.png" class="headdder"onMouseOver="mon(this);"onMouseOut="mout(this);"
 		 onClick="anima();">
 	
 
