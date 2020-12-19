@@ -152,6 +152,7 @@
 				html,body{margin:0;padding:0}
 			.imgg{
 			height: 100%;
+			opacity: 0.8;
 			}
 			.imggg{
 			height: 100%;
@@ -159,6 +160,7 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
+				
 			}
 
 			}
@@ -271,7 +273,7 @@
 			}
 			.imgg{
 			width: 75%;
-				
+			opacity: 0.8;
 			}
 			.imggg{
 			height: 100%;
@@ -297,28 +299,40 @@
 		
 		@keyframes circ1{
 			0%{opacity: 0}
-			2%{opacity: 0.8}
-			18%{opacity: 0.8}
+			2%{opacity: 1}
+			18%{opacity: 1}
 			20%{opacity: 0}
 			100%{opacity: 0}
+			0%{z-index: 4}
+			2%{z-index: 6}
+			18%{z-index: 6}
+			20%{z-index: 4}
+			100%{z-index: 4}
 		}
 		
 	
 	
 		.animation1{
 			animation: circ1 25s infinite;
-			position: absolute;top:18%;width: 100%;height: 30%; opacity: 0.8;
+			position: absolute;top:18%;width: 100%;height: 30%; opacity: 1;
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			z-index: 1;
 		}
 		@keyframes circ2{
 			0%{opacity: 0}
 			20%{opacity: 0}
-			22%{opacity: 0.8}
-			38%{opacity: 0.8}
+			22%{opacity: 1}
+			38%{opacity: 1}
 			40%{opacity: 0}
 			100%{opacity: 0}
+			0%{z-index: 4}
+			20%{z-index: 4}
+			22%{z-index: 6}
+			38%{z-index: 6}
+			40%{z-index: 4}
+			100%{z-index: 4}
 		}
 		.animation2{
 			animation: circ2 25s infinite;
@@ -326,15 +340,22 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			z-index: 2;
 		
 		}
 		@keyframes circ3{
 			0%{opacity: 0}
 			40%{opacity: 0}
-			42%{opacity: 0.8}
-			58%{opacity: 0.8}
+			42%{opacity: 1}
+			58%{opacity: 1}
 			60%{opacity: 0}
 			100%{opacity: 0}
+			0%{z-index: 4}
+			40%{z-index: 4}
+			42%{z-index: 6}
+			58%{z-index: 6}
+			60%{z-index: 4}
+			100%{z-index: 4}
 		}
 		.animation3{
 			animation: circ3 25s infinite;
@@ -342,15 +363,22 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			z-index: 3;
 			
 		}
 		@keyframes circ4{
 			0%{opacity: 0}
 			60%{opacity: 0}
-			62%{opacity: 0.8}
-			78%{opacity: 0.8}
+			62%{opacity: 1}
+			78%{opacity: 1}
 			80%{opacity: 0}
 			100%{opacity: 0}
+			0%{z-index: 4}
+			60%{z-index: 4}
+			62%{z-index: 6}
+			78%{z-index: 6}
+			80%{z-index: 4}
+			100%{z-index: 4}
 		}
 	
 		.animation4{
@@ -360,13 +388,19 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			z-index: 4;
 		}
 		@keyframes circ5{
 			0%{opacity: 0}
 			80%{opacity: 0}
-			82%{opacity: 0.8}
-			98%{opacity: 0.8}
-			100%{opacity: 0}
+			82%{opacity: 1}
+			98%{opacity: 1}
+			100%{opacity: 4}
+			0%{z-index: 4}
+			80%{z-index: 4}
+			82%{z-index: 6}
+			98%{z-index: 6}
+			100%{z-index: 4}
 		}
 	
 		.animation5{
@@ -376,6 +410,7 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			z-index: 5;
 		}
 	</style>
 	
@@ -430,11 +465,11 @@
 	</div>
 	<img src="111.png"class="headdder"onMouseOver="mmon(this);"onMouseOut="mmout(this);"
 		 onClick="anima();">
-	<div class="animation1"><a href="https://science-event.nctu.edu.tw" class="imggg" ><img src="uapx.jpg" class="imgg" onMouseOver="mon(this);" onMouseOut="mout(this);"></a></div>
-	<div class="animation2"><a href="https://apcs.csie.ntnu.edu.tw" class="imggg"><img src="uapcs.jpg" class="imgg"onMouseOver="mon(this);" onMouseOut="mout(this);"></a></div>
-	<div class="animation3"><a href="http://www.toeic.com.tw" class="imggg"><img src="utoeic-1.png"class="imgg"onMouseOver="mon(this);" onMouseOut="mout(this);"></a></div>		
-	<div class="animation4"><a href="https://language109.eduweb.tw/Module/Home/Index.php" class="imggg"><img src="uchinese.png"class="imgg"onMouseOver="mon(this);" onMouseOut="mout(this);"></a></div>
-	<div class="animation5"><a href="https://www.gept.org.tw" class="imggg"><img src="ugept.png"class="imgg"onMouseOver="mon(this);" onMouseOut="mout(this);"></a></div>
+	<div class="animation1"><a href="https://science-event.nctu.edu.tw" class="imggg" ><img src="uapx.jpg" class="imgg" onMouseOver="mmon(this);" onMouseOut="mmout(this);"></a></div>
+	<div class="animation2"><a href="https://apcs.csie.ntnu.edu.tw" class="imggg"><img src="uapcs.jpg" class="imgg"onMouseOver="mmon(this);" onMouseOut="mmout(this);"></a></div>
+	<div class="animation3"><a href="http://www.toeic.com.tw" class="imggg"><img src="utoeic-1.png"class="imgg"onMouseOver="mmon(this);" onMouseOut="mmout(this);"></a></div>		
+	<div class="animation4"><a href="https://language109.eduweb.tw/Module/Question/Index.php" class="imggg"><img src="uchinese.png"class="imgg"onMouseOver="mmon(this);" onMouseOut="mmout(this);"></a></div>
+	<div class="animation5"><a href="https://www.gept.org.tw" class="imggg"><img src="ugept.png"class="imgg"onMouseOver="mmon(this);" onMouseOut="mmout(this);"></a></div>
 	
 
 	
