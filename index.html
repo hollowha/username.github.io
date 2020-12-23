@@ -154,11 +154,16 @@
 		}
 		@media screen and (max-width:700px){
 			html,body{margin:0;padding:0}
+			.midobject{
+					width: 100%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+			}
 			.content{width:100%;}
 			.object{	/*放科目的方塊*/
-					width: 100%;
+					width: 75%;
 					background-color:#FFFFFF;
-					float: left;
 					opacity:0.8;
 					display: flex;
 					justify-content: center;
@@ -170,14 +175,13 @@
 					height: 100px;
 					width: 100%;
 					background-color:transparent;
-					float: left;	
-
+					float: left;
 				}
 			.wwobject{/*科目方塊不同排間隙的方塊*/
 					height: 3%;
 					width: 100%;
 					background-color:transparent;
-					float: left;	
+					float: left;
 				}
 			.wwwobject{/*最上層讓科目方塊往下的大間隙方塊*/
 				height: 200px;
@@ -416,21 +420,21 @@
 		<div class="box">
 			<div class="wwwobject"></div>
 			<div class="wobject"></div>
-			<a href="子目錄1/chinese.html">
+			<a href="子目錄1/chinese.html" class="midobject">
 				<div class="object"onMouseOver="mon(this);"onMouseOut="mout(this);">
 				<img src="chinese.png" class="loo"></div></a>
 			<div class="wobject"></div>
-			<a href="子目錄1/english.html"><div class="object"onMouseOver="mon(this);" onMouseOut="mout(this);"><img src="english.png" class="loo"></div></a>
+			<a href="子目錄1/english.html" class="midobject"><div class="object"onMouseOver="mon(this);" onMouseOut="mout(this);"><img src="english.png" class="loo"></div></a>
 			<div class="wobject"></div>
-			<a href="子目錄1/math.html"><div class="object"onMouseOver="mon(this);" onMouseOut="mout(this);"><img src="math.png" class="loo"></div></a>
+			<a href="子目錄1/math.html"  class="midobject"><div class="object"onMouseOver="mon(this);" onMouseOut="mout(this);"><img src="math.png" class="loo"></div></a>
 
 			<div class="wwobject"></div>
 			<div class="wobject"></div>
-			<a href="子目錄1/nature.html"><div class="object"onMouseOver="mon(this);" onMouseOut="mout(this);"><img src="nature.png" class="loo"></div></a>
+			<a href="子目錄1/nature.html"  class="midobject"><div class="object"onMouseOver="mon(this);" onMouseOut="mout(this);"><img src="nature.png" class="loo"></div></a>
 			<div class="wobject"></div>
-			<a href="子目錄1/social.html"><div class="object"onMouseOver="mon(this);" onMouseOut="mout(this);"><img src="social.png" class="loo"></div></a>
-			<div class="wobject"></div>
-			<a href="子目錄1/info.html"><div class="object"onMouseOver="mon(this);" onMouseOut="mout(this);"><img src="info.png" class="loo"></div></a>
+			<a href="子目錄1/social.html"  class="midobject"><div class="object"onMouseOver="mon(this);" onMouseOut="mout(this);"><img src="social.png" class="loo"></div></a>
+			<div class="wobject"  class="midobject"></div>
+			<a href="子目錄1/info.html" class="midobject"><div class="object"onMouseOver="mon(this);" onMouseOut="mout(this);"><img src="info.png" class="loo"></div></a>
 		</div>
 		
 		
