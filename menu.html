@@ -1,0 +1,469 @@
+<!doctype html><!-->請善用收納整理程式碼OuO<-->
+<html style="height: 100%; width:100%;">
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"/>
+	<script type="text/javascript">//javascript地區，寫淡入淡出的地方
+		var hello=document.getElementById("")
+		function mon(element){element.style.opacity='0.9';}
+		function mout(element){element.style.opacity='0.6';}
+		function mmon(element){element.style.opacity='1';}
+		function mmout(element){element.style.opacity='0.8';}
+		function anima(){//下拉式菜單觸發
+			var boomm=document.getElementById("boomm");
+			var aqa=boomm.style.opacity;
+			if(aqa<0.1){boomm.style.opacity="0.8";boomm.style.zIndex="8";}
+			else{boomm.style.opacity="0";boomm.style.zIndex="1";}
+		}
+	
+	</script>
+	<style>/*CSS設定區，很亂很雜，建議全部都先收納，需要再打開即可*/
+		@media screen and (min-width:700px){
+			html,body{margin:0;padding:0}
+			.object{					/*放科目的方塊*/
+					height: 20%;
+					width: 24%;
+					background-color:#FFFFFF;
+					float: left;
+					opacity:0.6;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					border-radius: 0px;
+					box-shadow: 0px 0px 0px #000000;
+					z-index: 10;
+				}
+	    	.wobject{					/*科目方塊一排中間隙的方塊*/
+					height:17%;
+					width: 7%;
+					background-color:transparent;
+					float: left;	
+
+				}
+	    	.wwobject{					/*科目方塊不同排間隙的方塊*/
+					height: 3%;
+					width: 100%;
+					background-color:transparent;
+					float: left;	
+				}
+			.wwwobject{/*最上層讓科目方塊往下的大間隙方塊*/
+					height: 50%;
+					width: 100%;
+					background-color:transparent;
+					float: left;	
+				}
+			.box{/*包裹整個科目方塊(object)系列*/
+					position: absolute;
+					bottom: 10px;
+					left : 0px;
+					width:100%;
+					height: 87%;
+		        	 z-index: 2;	
+				}
+			.roll{/*似乎沒用先放著*/
+				position: absolute;top:30%;
+			}
+			.loo{	/*科目方塊img層*/
+					height: 100%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+			.head{/*最上面放logo的區塊(顏色陰影圓角調整)*/
+				background-color:#FFFFFF;height: 100%;border-radius: 0px;
+					box-shadow: 0px 5px 10px #000000;}
+			.headd{/*logo區塊調整層*/
+				height: 100%;
+			}
+			.logo{/*logo區塊調整ahref層*/
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+			}
+			.headdd{/*logo區塊img調整層*/
+				height: 80%;
+			}
+			.headerstyle{/*包裹整個logo區塊*/
+				height: 15%;width:100%;position: absolute;top:0px;left: 0px;position: fixed;z-index: 8;
+			}
+			.headdder{/*下拉是選單「三」img調整層*/
+				height: 15%;left:0%;position: absolute;top: 0%;opacity:0.8;position: fixed;z-index: 9;
+			}
+			.bodystyle{/*背景*/
+				height: 100%;width:100%;box-sizing: border-box;width:100%;
+				background-size: cover;
+				background-attachment:fixed;
+				background-image: url(woodbg.jpg);}
+			.background{/*他不是背景，似乎沒用到*/
+				height: 100%;width: 100%;
+			}
+			.boom1{/*下拉式選單方格區塊*/
+				width: 100%;
+				height: 90%;
+				background-color:#000000;
+			}
+			.boom2{/*下拉式選單三角形區塊*/
+				width: 100%;
+				height: 10%;
+			}
+			.bbmm{/*下拉式選單方格上方空區塊*/
+			height: 20%;
+			width: 100%;
+			}
+			.boom22{/*下拉式選單包裹方格間隙三角形區塊*/
+				width: 100%;
+				height: 100%;
+			}
+			.boom{/*包裹整個下拉式選單*/
+			position: absolute;
+			left: 0%;
+			top:0%;
+			height: 100%;
+			width: 20%;
+			opacity:0;
+			transition:opacity 0.5s;
+			box-shadow: 0px 0px 0px #000000;
+			position: fixed;z-index: 8;
+		}
+			.booom{/*下拉式選單裡面選項方塊*/
+				height: 8%;
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.bm{/*下拉式選單選項更裡頭方塊*/
+				background-color: aliceblue;width: 90%;height: 100%;opacity: 0.6;
+			}
+			.wbooom{/*下拉式選單間隙區塊*/
+				height: 2%;
+				width: 100%;
+			}	
+			.imgg{/*循環播放視窗img層*/
+			height: 100%;
+			opacity: 0.8;
+			}
+			.imggg{/*循環播放視窗ahref層*/
+			height: 100%;
+			width: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+				
+			}
+		}
+		@media screen and (max-width:700px){
+			html,body{margin:0;padding:0}
+			.midobject{
+					width: 100%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+			}
+			.content{width:100%;}
+			.object{	/*放科目的方塊*/
+					width: 75%;
+					background-color:#FFFFFF;
+					opacity:0.8;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					border-radius: 15px;
+					box-shadow: 0px 0px 5px #000000;
+				}
+			.wobject{/*科目方塊一排中間隙的方塊*/
+					height: 100px;
+					width: 100%;
+					background-color:transparent;
+					float: left;
+				}
+			.wwobject{/*科目方塊不同排間隙的方塊*/
+					height: 3%;
+					width: 100%;
+					background-color:transparent;
+					float: left;
+				}
+			.wwwobject{/*最上層讓科目方塊往下的大間隙方塊*/
+				height: 200px;
+			}
+			.box{/*包裹整個科目方塊(object)系列*/
+					position: absolute;
+					bottom: 10px;
+					left : 0px;
+					width:100%;
+					height: 87%;
+				    z-index: 2;
+				}
+			.roll{/*似乎沒用先放著*/
+					position: absolute;
+					width: 100%;
+					top: 20%;
+					height: 30%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+			.rolll{/*似乎沒用先放著*/
+				float: right;height: 85%;
+			}
+			.loo{/*科目方塊img層*/
+					width:75%;
+					height: 100%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+			.head{/*最上面放logo的區塊(顏色陰影圓角調整)*/
+				background-color:#FFFFFF; height: 100%;border-radius: 10px;
+					box-shadow: 0px 0px 20px #000000;
+			}
+			.headd{/*logo區塊調整層*/
+				height: 100%;
+				
+			}
+			.logo{/*logo區塊調整ahref層*/
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+		}
+			.headdd{ /*logo區塊img調整層*/
+				height: 100%;
+			}
+			.headdder{/*下拉是選單「三」img調整層*/
+				height: 8%;left:0%;position: absolute;top:0%;opacity: 0.8;position: fixed;z-index: 9;
+			}	
+			.headerstyle{/*包裹整個logo區塊*/
+				height: 8%;width:100%;position: absolute;left:0%;top:0%;position: fixed;
+				z-index: 8;
+			}
+			.boom1{/*下拉式選單方格區塊*/
+				width: 100%;
+				height:100%;
+				
+			}
+			.boom2{/*下拉式選單三角形區塊*/
+				width: 0%;
+				height: 0%;
+			}
+			.boom22{/*下拉式選單包裹方格間隙三角形區塊*/
+				width: 0%;
+				height: 0%;
+			}
+			.boom{/*包裹整個下拉式選單*/
+			position: absolute;
+			left: 0%;
+			top:0%;
+			height: 20%;
+			width: 100%;
+			opacity:0;
+			background-color:#000000;
+			transition:opacity 0.3s;
+			position: fixed;
+			z-index: 8;
+			}
+			.bbmm{/*下拉式選單方格上方空區塊*/
+				height: 50%;width: 100%;
+			}
+			.booom{/*下拉式選單裡面選項方塊*/
+				height: 40%;
+				width: 20%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				float:left;
+			}
+			.bm{/*下拉式選單選項更裡頭方塊*/
+				background-color: aliceblue;width: 100%;height: 90%;opacity: 0.6;
+			}
+			.wbooom{/*下拉式選單間隙區塊*/
+				height: 30%;width: 4%;float:left;
+			}
+			.bodystyle{/*背景*/
+				width:100%;
+				
+				background-size: cover;
+				background-attachment:fixed;
+				background-image: url(woodbg.jpg);
+			}
+			.imgg{/*循環播放視窗img層*/
+			width: 75%;
+			opacity: 0.8;
+			}
+			.imggg{/*循環播放視窗ahref層*/
+			height: 100%;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			}
+			}
+		.boxxx{/*忘了*/
+			width: 20%;height: 20%;
+		}
+		@keyframes circ1{/*循環視窗-動畫設定-第1張*/
+			0%{opacity: 0}
+			2%{opacity: 1}
+			18%{opacity: 1}
+			20%{opacity: 0}
+			100%{opacity: 0}
+			0%{z-index: 4}
+			2%{z-index: 6}
+			18%{z-index: 6}
+			20%{z-index: 4}
+			100%{z-index: 4}
+		}
+		.animation1{/*循環視窗-屬性設定-第1張*/
+			animation: circ1 25s infinite;
+			position: absolute;top:18%;width: 100%;height: 30%; opacity: 1;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			z-index: 1;
+		}
+		@keyframes circ2{/*循環視窗-動畫設定-第2張*/
+			0%{opacity: 0}
+			20%{opacity: 0}
+			22%{opacity: 1}
+			38%{opacity: 1}
+			40%{opacity: 0}
+			100%{opacity: 0}
+			0%{z-index: 4}
+			20%{z-index: 4}
+			22%{z-index: 6}
+			38%{z-index: 6}
+			40%{z-index: 4}
+			100%{z-index: 4}
+		}
+		.animation2{/*循環視窗-屬性設定-第2張*/
+			animation: circ2 25s infinite;
+			position: absolute;top:18%;width: 100%;height: 30%; opacity: 1;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			z-index: 2;
+		
+		}
+		@keyframes circ3{/*循環視窗-動畫設定-第3張*/
+			0%{opacity: 0}
+			40%{opacity: 0}
+			42%{opacity: 1}
+			58%{opacity: 1}
+			60%{opacity: 0}
+			100%{opacity: 0}
+			0%{z-index: 4}
+			40%{z-index: 4}
+			42%{z-index: 6}
+			58%{z-index: 6}
+			60%{z-index: 4}
+			100%{z-index: 4}
+		}
+		.animation3{/*循環視窗-屬性設定-第3張*/
+			animation: circ3 25s infinite;
+			position: absolute;top:18%;width: 100%;height: 30%; opacity: 1;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			z-index: 3;
+			
+		}
+		@keyframes circ4{/*循環視窗-動畫設定-第4張*/
+			0%{opacity: 0}
+			60%{opacity: 0}
+			62%{opacity: 1}
+			78%{opacity: 1}
+			80%{opacity: 0}
+			100%{opacity: 0}
+			0%{z-index: 4}
+			60%{z-index: 4}
+			62%{z-index: 6}
+			78%{z-index: 6}
+			80%{z-index: 4}
+			100%{z-index: 4}
+		}
+		.animation4{/*循環視窗-屬性設定-第4張*/
+			animation: circ4 25s infinite;
+			
+			position: absolute;top:18%;width: 100%;height: 30%; opacity: 1;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			z-index: 4;
+		}
+		@keyframes circ5{/*循環視窗-動畫設定-第5張*/
+			0%{opacity: 0}
+			80%{opacity: 0}
+			82%{opacity: 1}
+			98%{opacity: 1}
+			100%{opacity: 4}
+			0%{z-index: 4}
+			80%{z-index: 4}
+			82%{z-index: 6}
+			98%{z-index: 6}
+			100%{z-index: 4}
+		}
+		.animation5{/*循環視窗-屬性設定-第5張*/
+			animation: circ5 25s infinite;
+			
+			position: absolute;top:18%;width: 100%;height: 30%; opacity: 1;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			z-index: 5;
+		}
+	</style>
+<meta charset="utf-8">
+<title>KIWINNING中學生競賽統整網</title>
+</head>
+<body class="bodystyle">
+	<div  style="height: 100%;width:100%;position: absolute;top:0%;left: 0%;">
+		<div class="box">
+			<div class="wwwobject"></div>
+			<div class="wobject"></div>
+			<a href="子目錄1/chinese.html" class="midobject">
+				<div class="object"onMouseOver="mon(this);"onMouseOut="mout(this);">
+				<img src="chinese.png" class="loo"></div></a>
+			<div class="wobject"></div>
+			<a href="子目錄1/english.html" class="midobject"><div class="object"onMouseOver="mon(this);" onMouseOut="mout(this);"><img src="english.png" class="loo"></div></a>
+			<div class="wobject"></div>
+			<a href="子目錄1/math.html"  class="midobject"><div class="object"onMouseOver="mon(this);" onMouseOut="mout(this);"><img src="math.png" class="loo"></div></a>
+
+			<div class="wwobject"></div>
+			<div class="wobject"></div>
+			<a href="子目錄1/nature.html"  class="midobject"><div class="object"onMouseOver="mon(this);" onMouseOut="mout(this);"><img src="nature.png" class="loo"></div></a>
+			<div class="wobject"></div>
+			<a href="子目錄1/social.html"  class="midobject"><div class="object"onMouseOver="mon(this);" onMouseOut="mout(this);"><img src="social.png" class="loo"></div></a>
+			<div class="wobject"  class="midobject"></div>
+			<a href="子目錄1/info.html" class="midobject"><div class="object"onMouseOver="mon(this);" onMouseOut="mout(this);"><img src="info.png" class="loo"></div></a>
+		</div>
+		
+		
+	</div>
+	<div class="boom" id="boomm">
+		<div class="boom1">
+		<div class="bbmm"> </div>
+		<div class="wbooom"></div>
+		<div class="booom"><div class="bm"onMouseOver="mon(this);" onMouseOut="mout(this);"></div></div>
+		<div class="wbooom"></div>
+		<div class="booom"><div class="bm"onMouseOver="mon(this);" onMouseOut="mout(this);"></div></div>
+		<div class="wbooom"></div>
+		<div class="booom"><div class="bm"onMouseOver="mon(this);" onMouseOut="mout(this);"></div></div>
+		<div class="wbooom"></div>
+		<div class="booom"><div class="bm"onMouseOver="mon(this);" onMouseOut="mout(this);"></div></div>
+		</div>
+		<div class="boom2"><img class="boom22"src="tri.png"></div>
+	</div>
+	<div class="headerstyle">
+	<div  class="head" >
+		<div class="headd"><a class="logo"href="index.html"><img src="kiwinning.png" class="headdd"></a></div>
+	</div>
+	</div>
+	<img src="111.png"class="headdder"onMouseOver="mmon(this);"onMouseOut="mmout(this);"
+		 onClick="anima();">
+	<div class="animation1"><a href="https://science-event.nctu.edu.tw" class="imggg" ><img src="uapx.jpg" class="imgg" onMouseOver="mmon(this);" onMouseOut="mmout(this);"></a></div>
+	<div class="animation2"><a href="https://apcs.csie.ntnu.edu.tw" class="imggg"><img src="uapcs.jpg" class="imgg"onMouseOver="mmon(this);" onMouseOut="mmout(this);"></a></div>
+	<div class="animation3"><a href="http://www.toeic.com.tw" class="imggg"><img src="utoeic-1.png"class="imgg"onMouseOver="mmon(this);" onMouseOut="mmout(this);"></a></div>		
+	<div class="animation4"><a href="https://language109.eduweb.tw/Module/Question/Index.php" class="imggg"><img src="uchinese.png"class="imgg"onMouseOver="mmon(this);" onMouseOut="mmout(this);"></a></div>
+	<div class="animation5"><a href="https://www.gept.org.tw" class="imggg"><img src="ugept.png"class="imgg"onMouseOver="mmon(this);" onMouseOut="mmout(this);"></a></div>
+</body>
+</html>
