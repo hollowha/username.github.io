@@ -9,6 +9,34 @@
 		function mmout(element){element.style.opacity='0.8';}
 	</script>
 	<style>
+		@keyframes ii{
+			0%{opacity: 0}
+			60%{opacity: 0}
+			61%{opacity: 1}
+			69%{opacity: 1}
+			70%{opacity: 0}
+			80%{opacity: 0}
+			81%{opacity: 1}
+			89%{opacity: 1}
+			90%{opacity: 0}
+			100%{opacity: 0}
+		}
+		@keyframes pp{
+			0%{opacity: 0.6}
+			60%{opacity: 0.6}
+			61%{opacity: 1}
+			69%{opacity: 1}
+			70%{opacity: 0.6}
+			80%{opacity: 0.6}
+			81%{opacity: 1}
+			89%{opacity: 1}
+			90%{opacity: 0.6}
+			100%{opacity: 0.6}
+		}
+		@keyframes out{
+			0%{opacity: 0}
+			100%{opacity: 0.8}
+		}
 		@media screen and (min-width:700px){
 		.kk{
 			position: absolute;
@@ -22,6 +50,7 @@
 			top:20%;
 			left:2%;
 			opacity: 0.8;
+			animation: out 2s;
 		}
 		.p2{
 			position: absolute;
@@ -29,6 +58,7 @@
 			top:23%;
 			right: 2%;
 			opacity: 0.8;
+			animation: out 2s;
 		}
 		.p3{
 			position: absolute;
@@ -36,13 +66,15 @@
 			top:40%;
 			left:10%;
 			opacity: 0.8;
+			animation: out 2s;
 		}
 		.p4{
 			position: absolute;
 			width: 55%;
 			bottom:0%;
 			left:23%;
-			opacity: 0.8;
+			opacity: 0.6;
+			animation: pp 4s infinite;
 		}
 		.i1{
 			position: absolute;
@@ -50,6 +82,7 @@
 			left:35%;
 			top:0%;
 			opacity: 0.8;
+			animation: out 2s;
 		}
 		.i2{
 			position: absolute;
@@ -57,6 +90,7 @@
 			top:20%;
 			right: 27%;
 			opacity: 0.8;
+			animation: out 2s;
 		}
 		.i3{
 			position: absolute;
@@ -64,25 +98,30 @@
 			top:50%;
 			left:65%;
 			opacity: 0.8;
+			animation: out 2s;
 		}		
 		.i4{
 			position: absolute;
 			width: 15%;
 			bottom:0%;
-			left:5%;
-			opacity: 0.8;
+			left:10%;
+			opacity: 1;
+			animation: ii 4s infinite;
 		}
 				
 		.i5{
 			position: absolute;
 			width: 15%;
 			bottom:2%;
-			left:80%;
+			left:75%;
+			opacity: 1;
+			animation: ii 4s infinite;
 		}
 		.bg{
 			background:  #FFEFCD;
+			animation: out 2s;
 			}
-		}
+	
 		.header{
 			position: absolute;
             width: 100%;			
@@ -99,12 +138,14 @@
 			height: 20%;
 			background: #FFFFFF;
 		}
+		}
 		@media screen and (max-width:700px){
 		.kk{
 			position: absolute;
 			width: 130%;
 			top:0px;
 			right:0px;
+			animation: out 2s;
 		}
 		.p1{
 			position: absolute;
@@ -112,6 +153,7 @@
 			top:20%;
 			left:0px;
 			opacity: 0.8;
+			animation: out 2s;
 		}
 		.p2{
 			position: absolute;
@@ -119,6 +161,7 @@
 			top:40%;
 			left:40%;
 			opacity: 0.8;
+			animation: out 2s;
 		}
 		.p3{
 			position: absolute;
@@ -126,6 +169,7 @@
 			top:60%;
 			left:10%;
 			opacity: 0.8;
+			animation: out 2s;
 		}
 		.p4{
 			position: absolute;
@@ -133,6 +177,7 @@
 			bottom:5%;
 			left:15%;
 			opacity: 0.8;
+			animation: pp 4s infinite;
 		}
 		.i1{
 			position: absolute;
@@ -140,6 +185,7 @@
 			left:60%;
 			top:7%;
 			opacity: 0.8;
+			animation: out 2s;
 		}
 		.i2{
 			position: absolute;
@@ -147,6 +193,7 @@
 			top:38%;
 			left:5%;
 			opacity: 0.8;
+			animation: out 2s;
 		}
 		.i3{
 			position: absolute;
@@ -154,6 +201,7 @@
 			top:60%;
 			left:60%;
 			opacity: 0.8;
+			animation: out 2s;
 		}		
 		.i4{
 			position: absolute;
@@ -161,6 +209,7 @@
 			bottom:8%;
 			left:0%;
 			opacity: 0.8;
+			animation: ii 4s infinite;
 		}
 				
 		.i5{
@@ -168,9 +217,11 @@
 			width: 20%;
 			bottom:8%;
 			left:80%;
+			animation: ii 4s infinite;
 		}
 		.bg{
 			background:  #FFEFCD;
+			animation: out 2s;
 			}
 		.header{
 			position: absolute;
