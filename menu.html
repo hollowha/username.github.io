@@ -14,9 +14,12 @@
 			if(aqa<0.1){boomm.style.opacity="0.8";boomm.style.zIndex="8";}
 			else{boomm.style.opacity="0";boomm.style.zIndex="1";}
 		}
-	
 	</script>
 	<style>/*CSS設定區，很亂很雜，建議全部都先收納，需要再打開即可*/
+		@keyframes out{
+			0%{opacity: 0}
+			100%{opacity: 1}
+		}
 		@media screen and (min-width:700px){
 			html,body{margin:0;padding:0}
 			.object{					/*放科目的方塊*/
@@ -93,7 +96,9 @@
 				height: 100%;width:100%;box-sizing: border-box;width:100%;
 				background-size: cover;
 				background-attachment:fixed;
-				background-image: url(woodbg.jpg);}
+				background-image: url(woodbg.jpg);
+				animation: out 2s;
+			}
 			.background{/*他不是背景，似乎沒用到*/
 				height: 100%;width: 100%;
 			}
@@ -281,7 +286,7 @@
 			}
 			.bodystyle{/*背景*/
 				width:100%;
-				
+				animation: out 2s;
 				background-size: cover;
 				background-attachment:fixed;
 				background-image: url(woodbg.jpg);

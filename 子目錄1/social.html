@@ -24,6 +24,10 @@
 	}
 	</script>
 <style>
+	@keyframes out{
+			0%{opacity: 0}
+			100%{opacity: 1}
+		}
 	*{
 		box-sizing: border-box;
 	}
@@ -119,7 +123,8 @@
 			.bodystyle{height: 100%;width:100%;box-sizing: border-box;width:100%;
 				background-size: cover;
 				background-attachment:fixed;
-				background-image: url(woodbg.jpg);}
+				background-image: url(woodbg.jpg);
+				animation: out 2s;}
 			.headerstyle{height: 15%;width:100%;position: absolute;position: fixed;top:0px;left: 0px;}
 			.background{height: 100%;width: 100%;}
 			.boom1{
@@ -239,6 +244,7 @@
 				background-size: cover;
 				background-attachment:fixed;
 				background-image: url(woodbg.jpg);
+				animation: out 2s;
 			}
 		.item{
 		flex: auto;
